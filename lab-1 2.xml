@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE start[
+<!ELEMENT start (timeTable,offices) >
+<!ELEMENT timeTable (lesson+) >
+<!ELEMENT lesson (date, time) >
+<!ELEMENT offices (office+) >
+<!ELEMENT office (name,adress) >
+<!ATTLIST lesson no CDATA #REQUIRED>
+<!ATTLIST office code CDATA #REQUIRED> 
+<!ELEMENT date (#PCDATA) >
+<!ELEMENT time (#PCDATA) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT adress (#PCDATA) >
+]>
 <start>
-<timeTable xmlns="http://mysite.ru/ns/courses/xml/lab1">
+<timeTable>
    <lesson no="1">
      <date>2012-03-21</date>
      <time>18:30:00</time>
@@ -10,7 +23,7 @@
      <time>18:30:00</time>
    </lesson>
 </timeTable>
-<offices xmlns="http://mysite.ru/ns/courses/xml/offices">
+<offices>
     <office code="БК">
 	   <name>Комплекс "Бакукенский"</name>
 	   <adress>Ул. Бакукенская, 71</adress>
