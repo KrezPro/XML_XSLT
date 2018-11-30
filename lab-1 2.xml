@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<start>
+<timeTable xmlns="http://mysite.ru/ns/courses/xml/lab1">
+   <lesson no="1">
+     <date>2012-03-21</date>
+     <time>18:30:00</time>
+   </lesson>
+   <lesson no="2">
+     <date>2013-03-21</date>
+     <time>18:30:00</time>
+   </lesson>
+</timeTable>
+<offices xmlns="http://mysite.ru/ns/courses/xml/offices">
+    <office code="БК">
+	   <name>Комплекс "Бакукенский"</name>
+	   <adress>Ул. Бакукенская, 71</adress>
+	</office>
+	 <office code="РА">
+	   <name>Комплекс "Радио"</name>
+	   <adress>Ул. Радио, 24</adress>
+	</office>
+</offices>
+</start>
